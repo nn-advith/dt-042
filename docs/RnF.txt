@@ -1,0 +1,92 @@
+DT-042 Requirements and Features
+
+Initial Toolset:
+
+1. Notes utility:
+    - Create/ Edit/ Delete notes
+    - Color code
+    - Date and time of creation; display inconspicuously
+    - auto save from other notes tag with origin tool
+2. Base64 Encoder/Decoder
+    - Text to B64 and vice versa
+    - store to notes; auto click ----> make this save thing cross-tool set
+3. Color pallette saver
+    - mouse based color picker
+    - ability to input hex/rgb/hsv to search for colors
+    - 2/3/4/5 color pallette options
+    - list of  pallettes; uniform way to display them;
+    - name, tag each pallette
+    - edit, delete pallette
+    - export image with cool design to share pallette
+4. Regex validator
+    - input for regex and input
+    - hightlights for matching parts; live
+    - errors and error print
+    - save to note with expression and matches list
+5. Cronjobs
+    - english translation in real time; relative to current time
+    - common expressions
+    - reference legend
+    - save to note with description
+6. API client (simple)
+    - GET/POST/PUT/ and other headers
+    - url, body , query params, auth 
+    - save request format for later use
+    - convert request and response to notes
+7. Text compare
+    - live text compare
+    - per line comaprison
+    - hightlight differences
+8. JSON viewer/formatter/stringify/parse
+    - tree view with expandable bocks
+    - colored hightlights in tree view
+    - format button for beautify
+    - validate the json and show errors ( live or on button click)
+
+
+Design:
+
+Pluggable and modular
+Cross platform - Windows and Linux
+Stack component for handling undo , redo etc
+Clipboard functions for copy, cut and paste
+Keyboard utilities and legend for every feature
+
+Components:
+
+    1. Settings
+        - theme
+        - backup on uninstall
+        - store last usage / context of tool
+        - get crash dump
+        - wipe all data (DANGER ZONE)
+        - export  all data/ import from other place
+    2. Sidebar 
+        - collapsible
+    3. Main panel
+    4. Toasts
+        - global
+    5. Popup forms
+        - reusable and modular for all use cases.
+
+Logging:
+
+    custom logger - enabled from settings 
+    compress old logs / delete old logs 
+    cron jobs or comparable windows utility 
+
+
+Storage:
+
+1. Local Storage -> AppData ( is encryption needed? ) - for conf and data
+2. Database needed? 
+3. State storage : usestate using redux
+
+
+Other considerations:
+
+Reusable components where needed
+decide on UI library or  custom components
+Component level css 
+Animations ??????????
+
