@@ -90,3 +90,5 @@ decide on UI library or  custom components
 Component level css 
 Animations ??????????
 
+Maybe try merging Nyx into this application??
+
